@@ -1,5 +1,5 @@
 {
-  "name": "redpixeldev/statamic-new",
+  "name": "redpixeldev/statamic-starter",
   "extra": {
     "statamic": {
       "name": "Statamic Red Pixel",
