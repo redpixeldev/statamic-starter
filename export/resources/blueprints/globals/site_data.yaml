@@ -1,0 +1,72 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Head
+        fields:
+          -
+            handle: favicon
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Favicon
+          -
+            handle: canonical_url
+            field:
+              type: text
+              display: 'Canonical URL'
+              validate:
+                - url
+          -
+            handle: site_name
+            field:
+              type: text
+              display: 'Site Name'
+          -
+            handle: twitter_site
+            field:
+              placeholder: '@vivgui'
+              type: text
+              display: 'Twitter Site'
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
+            prefix: seo_
+      -
+        display: 'Social Links'
+        fields:
+          -
+            handle: twitter_x
+            field:
+              type: text
+              display: Twitter/X
+              validate:
+                - url
+          -
+            handle: bluesky
+            field:
+              type: text
+              display: BlueSky
+          -
+            handle: github
+            field:
+              type: text
+              display: Github
+      -
+        display: Footer
+        fields:
+          -
+            handle: footer_title
+            field:
+              type: text
+              display: 'Footer Title'
+          -
+            handle: footer_description
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Footer Description'

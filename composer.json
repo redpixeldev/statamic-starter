@@ -1,0 +1,9 @@
+{
+  "name": "redpixeldev/statamic-new",
+  "extra": {
+    "statamic": {
+      "name": "Statamic Red Pixel",
+      "description": "A description of your starter kit"
+    }
+  }
+}

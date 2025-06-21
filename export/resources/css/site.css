@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+
+@theme {
+    --font-*: initial;
+    --font-body: Urbanist, sans-serif;
+    --font-content: Inter, sans-serif;
+
+    --color-brand-primary: #003551;
+    --color-brand-secondary: #01bffd;
+    --color-brand-blue: #0079d0;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+@utility btn {
+    @apply rounded-lg border-2 px-7 py-3 font-bold transition-colors duration-300 ease-linear;
+}
+
+@utility btn-primary {
+    @apply border-brand-secondary bg-brand-secondary hover:bg-brand-primary text-white;
+}
+
+@utility btn-secondary {
+    @apply border-brand-primary bg-brand-primary hover:bg-brand-secondary text-white;
+}
+
+@layer base {
+    html {
+        @apply font-body;
+    }
+
+    [x-cloak] {
+        @apply hidden!;
+    }
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}

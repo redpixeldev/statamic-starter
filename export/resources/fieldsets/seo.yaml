@@ -1,0 +1,19 @@
+title: SEO
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: og_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Open Graph Image'

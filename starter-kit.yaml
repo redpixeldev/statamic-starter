@@ -1,0 +1,25 @@
+export_paths:
+  - content
+  - config/filesystems.php
+  - config/sitemapamic.php
+  - config/feedamic.php
+  - config/backup.php
+  - resources/blueprints
+  - resources/fieldsets
+  - resources/css/site.css
+  - resources/views
+  - package.json
+  - vite.config.js
+  - routes/console.php
+  - .prettierrc
+  - .prettierignore
+  - .env.example
+  - .cursorrules
+  - .cursor
+  - .bladeignore
+dependencies:
+  league/flysystem-aws-s3-v3: ^3.29
+  mitydigital/feedamic: ^2.5
+  mitydigital/sitemapamic: ^3.2
+  resend/resend-php: ^0.18.0
+  spatie/laravel-backup: ^9.3
