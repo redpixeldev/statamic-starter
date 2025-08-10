@@ -74,7 +74,7 @@ return [
             'key' => env('CLOUDFLARE_R2_ACCESS_KEY_ID'),
             'secret' => env('CLOUDFLARE_R2_SECRET_ACCESS_KEY'),
             'region' => 'us-east-1',
-            'bucket' => env('CLOUDFLARE_R2_BUCKET'),
+            'bucket' => env('CLOUDFLARE_R2_BUCKET', ''),
             'url' => env('CLOUDFLARE_R2_URL'),
             'visibility' => 'public',
             'endpoint' => env('CLOUDFLARE_R2_ENDPOINT'),
